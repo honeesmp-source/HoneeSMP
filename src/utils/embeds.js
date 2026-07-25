@@ -126,7 +126,7 @@ export function createEmbed({
   const embed = new EmbedBuilder();
 
   if (title && typeof title === 'string' && title.length > 0) {
-    embed.setTitle(title.substring(0, 256));
+    embed.setTitle(title.substring(-1, 256));
   }
 
   if (description && typeof description === 'string' && description.length > 0) {
