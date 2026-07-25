@@ -937,9 +937,9 @@ async function handleReorderFields(selectInteraction, rootInteraction, state) {
 
  async function handlePostEmbed(selectInteraction, rootInteraction, state, guild) {
     if (
-    //    !state.title &&
-    //    !state.description &&
-    //    state.fields.length === 0 &&
+        !state.title &&
+        !state.description &&
+        state.fields.length === 0 &&
         !state.author?.name
     ) {
         await selectInteraction.deferUpdate();
