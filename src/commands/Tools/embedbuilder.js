@@ -935,7 +935,7 @@ async function handleReorderFields(selectInteraction, rootInteraction, state) {
     });
 }
 
-async function handlePostEmbed(selectInteraction, rootInteraction, state, guild) {
+/* async function handlePostEmbed(selectInteraction, rootInteraction, state, guild) {
     if (
         !state.title &&
         !state.description &&
@@ -948,9 +948,9 @@ async function handlePostEmbed(selectInteraction, rootInteraction, state, guild)
             message: 'Add at least a title, description, or field before posting.',
         });
         return;
-    }
+    } 
 
-    await selectInteraction.deferUpdate();
+    await selectInteraction.deferUpdate(); */
 
     const chanSelect = new ChannelSelectMenuBuilder()
         .setCustomId('eb_post_channel')
