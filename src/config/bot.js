@@ -23,8 +23,8 @@ export const botConfig = {
     // 5 = Competing
     activities: [
       {
-        name: "Custom Status", // required by Discord API, not shown in the client
-        state: "stalking",     // this is what people actually see
+        name: "Bee-yond excited", // required by Discord API, not shown in the client
+        state: "Watching",     // this is what people actually see
         type: 3,               // Custom
       },
     ],
@@ -97,7 +97,7 @@ export const botConfig = {
       secondary: "#2F3136",
 
       // Standard status colors for success/error/warning/info messages.
-      success: "#57F287",
+      success: "#fff89e",
       error: "#ED4245",
       warning: "#FEE75C",
       info: "#3498DB",
