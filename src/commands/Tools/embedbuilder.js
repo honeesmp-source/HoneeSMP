@@ -56,8 +56,8 @@ function isValidHex(str) {
 function buildPreviewEmbed(state) {
     const embed = new EmbedBuilder();
 
- //   if (state.title)       embed.setTitle(state.title.substring(0, 256));
- //   if (state.description) embed.setDescription(state.description.substring(0, 4096));
+    if (state.title)       embed.setTitle(state.title.substring(0, 256));
+    if (state.description) embed.setDescription(state.description.substring(0, 4096));
 
     try {
         embed.setColor(state.color || getColor('primary'));
